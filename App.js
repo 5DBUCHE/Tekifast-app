@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { NativeBaseProvider, extendTheme } from 'native-base';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import UserSelectScreen from './src/screens/UserSelectScreen';
@@ -9,7 +8,7 @@ import ProfessionalMenu from './src/screens/ProfessionalMenu';
 import ClientMenu from './src/screens/ClientMenu';
 import ClientRegister from './src/screens/ClientRegister';
 import ClientPay from './src/screens/ClientPay';
-
+import ProfessionalJobDescription from './src/screens/ProfessionalJobDescription';
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -23,6 +22,7 @@ function App() {
           <Stack.Screen name="ClientPay" component={ClientPay} options={{ headerShown: false }} />
           <Stack.Screen name="ProfessionalLogin" component={ProfessionalLogin} options={{ headerShown: false }} />
           <Stack.Screen name="ProfessionalMenu" component={ProfessionalMenu} options={{headerShown: false}} />
+          <Stack.Screen name="ProfessionalJobDescription" component={ProfessionalJobDescription} options={{headerShown: false}} />
         </Stack.Navigator>
     </NavigationContainer>
   );

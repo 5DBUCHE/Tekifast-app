@@ -49,7 +49,7 @@ const Form = (props) => {
                         color: "indigo.500",
                         fontWeight: "medium",
                         fontSize: "sm"
-                    }} href="#">
+                    }} onPress={() => props.navigation.navigate('ClientRegister')}>
                         Sign Up
                     </Link>
                 </HStack>
